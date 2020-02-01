@@ -23,7 +23,7 @@ spec:
         resources: {}
         volumeMounts:
         - mountPath: /var/www/html
-          name: wp-data
+          name: wordpress-persistent-storage
           subPath: html
 
         env:
@@ -34,7 +34,7 @@ spec:
                 key: password
 
       volumes:
-      - name: wp-data
+      - name: wordpress-persistent-storage
         persistentVolumeClaim:
           claimName: wordpress-persistent-storage
 
