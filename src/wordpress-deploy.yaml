@@ -21,4 +21,22 @@ spec:
       - image: wordpress
         name: wordpress
         resources: {}
+        volumeMounts:
+        - mountPath: /var/www/html
+          name: wp-data
+          subPath: html
+
+        env:
+          - name: WORDPRESS_DB_PASSWORD
+            valueFrom:
+              secretKeyRef:
+                name: mysql-pass
+                key: password
+
+      volumes:
+      - name: wp-data
+        persistentVolumeClaim:
+          claimName: wordpress-persistent-storage
+
+
 status: {}
