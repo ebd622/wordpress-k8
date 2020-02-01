@@ -33,6 +33,11 @@ spec:
                 name: mysql-pass
                 key: password
 
+          - name: WORDPRESS_DB_HOST
+            valueFrom:
+              secretKeyRef:
+                name: mysql-pass
+                key: host
       volumes:
       - name: wordpress-persistent-storage
         persistentVolumeClaim:
