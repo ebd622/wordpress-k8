@@ -9,5 +9,9 @@ spec:
     - ReadWriteMany
   persistentVolumeReclaimPolicy: Recycle
   storageClassName: slow
-  hostPath:
+  mountOptions:
+    - hard
+    - nfsvers=4.1
+  nfs:
     path: /html
+    server: 127.0.0.1
