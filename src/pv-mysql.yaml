@@ -11,13 +11,13 @@ spec:
     - ReadWriteMany
   persistentVolumeReclaimPolicy: Recycle
   storageClassName: slow
-  hostPath:
-    path: /mysql
 
-#  mountOptions:
-#    - hard
-#    - nfsvers=4.1
-#  nfs:
-#    path: /mysql
-#    server: 127.0.0.1
+  ## --- Option 1: use nfs-server
+  nfs:
+    path: /mysql
+    server: nfs01
+
+  ## --- Option 2: use a path on nfs-server	
+  #hostPath:
+  #  path: /mysql
 

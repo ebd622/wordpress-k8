@@ -11,14 +11,12 @@ spec:
     - ReadWriteMany
   persistentVolumeReclaimPolicy: Recycle
   storageClassName: slow
-  hostPath:
+
+  ## --- Option 1: use nfs-server	
+  nfs:
     path: /html
+    server: nfs01
 
-#  mountOptions:
-#    - hard
-#    - nfsvers=4.1
-#  nfs:
-#    path: /html
-#    server: 127.0.0.1
-
-
+  ## --- Option 2 : use a path on a node
+  #hostPath:
+  #  path: /html
