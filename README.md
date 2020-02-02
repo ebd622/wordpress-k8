@@ -23,7 +23,7 @@ kuberbetes create -f ...
 
 #### 5. Create a secret
 ```bash
-kuberbetescreate secret generic mysql-pass --from-literal=password=admin --from-literal=host=wordpress-mysql
+kuberbetes create secret generic mysql-pass --from-literal=password=admin --from-literal=host=wordpress-mysql
 ```
 
 
