@@ -1,7 +1,7 @@
 # wordpress-k8
 Kubernetes challenge - Wordpress App
 
-### 1. Deploy PV for wordpress
+#### 1. Deploy PV for wordpress
 ```bash
 kuberbetes create -f pv-wordpress.yaml
 ```
@@ -11,17 +11,17 @@ kuberbetes create -f pv-wordpress.yaml
 kuberbetes create -f ...
 ```
 
-## 3. Deploy PV for wordpress
+#### 3. Deploy PV for wordpress
 ```bash
 kuberbetes create -f ...
 ```
 
-## 4. Deploy PVC for mysql
+#### 4. Deploy PVC for mysql
 ```bash
 kuberbetes create -f ...
 ```
 
-## 5. Create a secret
+#### 5. Create a secret
 ```bash
 kuberbetescreate secret generic mysql-pass --from-literal=password=admin --from-literal=host=wordpress-mysql
 ```
