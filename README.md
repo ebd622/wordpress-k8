@@ -1,6 +1,8 @@
 # wordpress-k8
 Kubernetes challenge - Wordpress App.
-This is the solution for the Wordpress App chalenge provided by https://kodekloud.com/
+This is the solution for the Wordpress App challenge which has been described in https://kodekloud.com/
+
+It can be deployed in any Kebernetes cluster.
 
 ### The architecture specified in the challenge
 <img src="images/architecture.png" width="60%">
