@@ -1,12 +1,12 @@
 # wordpress-k8
 Kubernetes challenge - Wordpress App
 
-## 1. Deploy PV for wordpress
+### 1. Deploy PV for wordpress
 ```bash
 kuberbetes create -f pv-wordpress.yaml
 ```
 
-## 2. Deploy PV for mysql
+#### 2. Deploy PV for mysql
 ```bash
 kuberbetes create -f ...
 ```
