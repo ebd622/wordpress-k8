@@ -15,7 +15,7 @@ kubectl create -f pv-wordpress.yaml
 
 #### 2. Deploy PVC for wordpress
 ```bash
-kubectl create -f pv-wordpress.yaml
+kubectl create -f pvc-wordpress.yaml
 ```
 
 #### 3. Deploy PV for mysql
